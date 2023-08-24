@@ -1,14 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-online-tutorials.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="css/index.min.css">
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/switch.css" />
+    <link rel="stylesheet" href="css/lists.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
-    <title>Online Tutorials</title>
-</head>
-<body>
-    
-</body>
+    <title>Repository | Online Tutorials</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img
+          src="http://github.com/matheus1714.png"
+          alt="Foto de Mayk Brito sorrindo, usando óculos e camisa preta, barba e fundo amarelo."
+        />
+        <p>@matheus1714</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button><img src="" /></button>
+        <span></span>
+      </div>
+      <section class="first">
+        <p>Personal Informatio</p>
+        <ul>
+          <li>
+            <a href="https://github.com/matheus1714" target="_blank"
+              >My Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="https://medium.com/@matheus1714" target="_blank"
+              >My Blog</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section id="projects">
+        <p>Tutorials</p>
+        <ul></ul>
+      </section>
+
+      <div id="social-links">
+        <a href="https://github.com/Matheus1714" target="_blank"
+          ><ion-icon name="logo-github"></ion-icon
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/matheus-mota-44b21a17b/"
+          target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://medium.com/@matheus1714" target="_blank"
+          ><ion-icon name="logo-medium"></ion-icon
+        ></a>
+        <a href="https://www.instagram.com/matheus_mota1714/" target="_blank"
+          ><ion-icon name="logo-instagram"></ion-icon
+        ></a>
+
+        <a href="https://www.facebook.com/Matheus1714/" target="_blank"
+          ><ion-icon name="logo-facebook"></ion-icon
+        ></a>
+      </div>
+      <footer>
+        Links portal developed for tutoring repository<br />
+        <a href="https://www.youtube.com/@OnlineTutorialsYT" target="_blank"
+          ><img
+            src="./assets/logo-online-tutorials.jpg"
+            alt="logo do programa discover da rocketseat"
+          />Online Tutorials</a
+        >
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/render-data.js"></script>
+  </body>
 </html>

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: white;
+  /* --bg-url: url(./assets/bg-mobile.jpg); */
+  --bg-url: linear-gradient(to right, #000000, #434343);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(../assets/moon-stars.svg);
+
+  --logo-color: #202024;
+  --logo-color-hover: #202024aa;
+}
+.light {
+  --text-color: black;
+  /* --bg-url: url(./assets/bg-mobile-light.jpg); */
+  --bg-url: linear-gradient(to right, #d3cce3, #e9e4f0);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --switch-bg-url: url(../assets/sun.svg);
+
+  --logo-color: #202024;
+  --logo-color-hover: #202024f0;
+}
+body {
+  /* background: var(--bg-url) no-repeat top center/cover; */
+  background: var(--bg-url);
+  height: 100vh;
+}
+body * {
+  font-family: "Inter", sans-serif;
+  color: var(--text-color);
+}
+
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+  text-align: center;
+}
+#container .first p {
+  padding-top: 24px;
+}
+#container section > p {
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  p {
+    font-size: 87.5%;
+  }
+  #projects .tag img {
+    height: 25px;
+    padding: 4px;
+    border-radius: 8px;
+  }
+}
