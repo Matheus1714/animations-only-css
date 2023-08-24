@@ -1,4 +1,29 @@
-# [Animations Only CSS](https://matheus1714.github.io/animations-only-css/)
+# [Animations CSS Only](https://matheus1714.github.io/animations-only-css/)🌠
 
-This is a project based on the YouTube [Online Tutorial](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog) channel for learning animation using CSS. The objectvo with this repository is just to have a list of animations listed.
+![animations](.github/animation.gif)
 
+This is a project based on the YouTube [Online Tutorial](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog) channel for learning animation using CSS. The goals with this repository is just learn about animations with the channel.
+
+## Technologies 📡
+
+This project was developed using only:
+
+- HTML
+- CSS
+- Javascript
+
+## Run Project 💣
+
+Clone this repository with the command:
+
+```
+git clone https://github.com/Matheus1714/ticket-generator.git
+```
+
+Open the file `index.html` on your browser.
+
+😝 Enjoy!!
+
+## Tutorials
+
+If you want to see the code, they are all in `/tutorials`.
