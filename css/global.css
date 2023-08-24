@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 :root {
-  --text-color: white;
+  --text-color: #fefdfb;
   /* --bg-url: url(./assets/bg-mobile.jpg); */
-  --bg-url: linear-gradient(to right, #000000, #434343);
+  --bg-url: linear-gradient(to right, #36312b, #383533);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(255, 255, 255, 0.05);
@@ -19,7 +19,7 @@
 .light {
   --text-color: black;
   /* --bg-url: url(./assets/bg-mobile-light.jpg); */
-  --bg-url: linear-gradient(to right, #d3cce3, #e9e4f0);
+  --bg-url: linear-gradient(to right, #fefdfb, #9c9c9a);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
