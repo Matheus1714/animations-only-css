@@ -2,7 +2,7 @@
 
 ![animations](.github/animation.gif)
 
-This is a project based on the YouTube [Online Tutorial](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog) channel for learning animation using CSS. The goals with this repository is just learn about animations with the channel.
+This is a project based on the YouTube Channel [Online Tutorial](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog) for learning about animations using only CSS. The goals with this repository is just learn about animations with this channel.
 
 ## Technologies 📡
 
