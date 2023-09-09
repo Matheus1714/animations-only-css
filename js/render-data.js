@@ -31,11 +31,6 @@ const projects = [
     ref: "./tutorials/Earth and Mars Animation/index.html",
   },
   {
-    name: "Fire Pit Image",
-    description: "Experience the cozy warmth of a fire pit through images.",
-    ref: "./tutorials/Fire Pit Image/index.html",
-  },
-  {
     name: "FontAwesome Icon Background Animation Effects",
     description: "Combine FontAwesome icons with background animations.",
     ref: "./tutorials/FontAwesome Icon Background Animation Effects/index.html",
