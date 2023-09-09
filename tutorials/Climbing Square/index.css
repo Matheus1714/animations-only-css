@@ -1,0 +1,110 @@
+:root {
+  --bg-color: #000;
+
+  --reflex-color: #0004;
+  --bg-cube: #03e9f4;
+  --light-cube-color: var(--bg-cube);
+  --light-cube-color-self: #03e9f480;
+
+  --w-cube: 100px;
+  --h-box: 200px;
+}
+.red {
+  --bg-cube: #f40f03;
+  --light-cube-color: var(--bg-cube);
+  --light-cube-color-self: #f40f0380;
+}
+.yellow {
+  --bg-cube: #f4f003;
+  --light-cube-color: var(--bg-cube);
+  --light-cube-color-self: #f4f00380;
+}
+.green {
+  --bg-cube: #03f417;
+  --light-cube-color: var(--bg-cube);
+  --light-cube-color-self: #03f41780;
+}
+.blue {
+  --bg-cube: #0357f4;
+  --light-cube-color: var(--bg-cube);
+  --light-cube-color-self: #0357f480;
+}
+.pink {
+  --bg-cube: #f403f4;
+  --light-cube-color: var(--bg-cube);
+  --light-cube-color-self: #f403f480;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  background: var(--bg-color);
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 100%;
+  transform: rotate(-34deg);
+}
+.container .box {
+  position: relative;
+  left: calc(0px - 2 * var(--w-cube));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% + calc(4 * var(--w-cube)));
+  height: var(--h-box);
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, var(--reflex-color));
+
+  animation: animateSurface 1.5s ease-in-out infinite;
+}
+@keyframes animateSurface {
+  0% {
+    transform: translate(0px);
+  }
+  100% {
+    transform: translate(calc(0px - var(--w-cube)));
+  }
+}
+.container .box .cube {
+  position: relative;
+  width: var(--w-cube);
+  height: var(--w-cube);
+  background: var(--bg-cube);
+  box-shadow: 0 0 5px var(--light-cube-color), 0 0 25px var(--light-cube-color),
+    0 0 50px var(--light-cube-color), 0 0 100px var(--light-cube-color),
+    0 0 200px var(--light-cube-color-self),
+    0 0 300px var(--light-cube-color-self);
+  transform-origin: bottom right;
+  animation: animate 1.5s ease-in-out infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  60% {
+    transform: rotate(90deg);
+  }
+  65% {
+    transform: rotate(85deg);
+  }
+  70% {
+    transform: rotate(90deg);
+  }
+  75% {
+    transform: rotate(87.5deg);
+  }
+  80%,
+  100% {
+    transform: rotate(90deg);
+  }
+}

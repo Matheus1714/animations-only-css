@@ -76,6 +76,11 @@ const projects = [
     description: "Create 3D Wavy Circle Loader Animation Effects",
     ref: "./tutorials/3D Wavy Circle Loader Animation Effects/index.html",
   },
+  {
+    name: "Climbing Square",
+    description: "Create Climbing Square",
+    ref: "./tutorials/Climbing Square/index.html",
+  },
 ]
 const projectsList = document.querySelector("#projects ul")
 for (let project of projects) {
