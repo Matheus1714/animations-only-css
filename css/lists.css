@@ -1,3 +1,18 @@
+#search {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: var(--surface-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+  margin: 1rem 0;
+  text-align: center;
+  transition: 0.2s;
+}
+#search:active {
+  background: var(--surface-color-hover);
+}
 ul {
   list-style: none;
 
