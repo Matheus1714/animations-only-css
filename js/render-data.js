@@ -71,6 +71,11 @@ const projects = [
     description: "Create dark neumorphism cards",
     ref: "./tutorials/Dark Neumorphism Cards/index.html",
   },
+  {
+    name: "3D Wavy Circle Loader Animation Effects",
+    description: "Create 3D Wavy Circle Loader Animation Effects",
+    ref: "./tutorials/3D Wavy Circle Loader Animation Effects/index.html",
+  },
 ]
 const projectsList = document.querySelector("#projects ul")
 for (let project of projects) {
