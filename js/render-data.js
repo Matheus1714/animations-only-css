@@ -81,6 +81,12 @@ const projects = [
     description: "Create Climbing Square",
     ref: "./tutorials/Climbing Square/index.html",
   },
+  {
+    name: "Magic Navigation Menu Indicator",
+    description:
+      "Magic Navigation Menu Indicator using Html CSS & Javascript | Curve Outside Effects",
+    ref: "./tutorials/Magic Navigation Menu Indicator/index.html",
+  },
 ]
 const projectsList = document.querySelector("#projects ul")
 for (let project of projects) {
