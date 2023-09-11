@@ -82,6 +82,11 @@ const projects = [
       "Magic Navigation Menu Indicator using Html CSS & Javascript | Curve Outside Effects",
     ref: "./tutorials/Magic Navigation Menu Indicator/index.html",
   },
+  {
+    name: "Solar Eclipse Animation",
+    description: "How To Create Solar Eclipse Animation Using Css and Html",
+    ref: "./tutorials/Solar Eclipse Animation/index.html",
+  },
 ]
 const projectsList = document.querySelector("#projects ul")
 for (let project of projects) {
