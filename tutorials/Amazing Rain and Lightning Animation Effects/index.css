@@ -1,0 +1,108 @@
+:root {
+  --bg-color: #1b1b1b;
+  --bg-solo-color: #ffffff1a;
+
+  --bg-cloud: #484f59;
+  --bg-cloud-shadow: #0001;
+
+  --bg-drop-color: #05a2eb;
+
+  --h-cloud: 100px;
+  --w-cloud: calc(3 * var(--h-cloud));
+
+  --h-container: calc(4 * var(--h-cloud));
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-color);
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: var(--h-container);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-bottom: 1px solid var(--bg-solo-color);
+}
+.container .cloud {
+  position: relative;
+  width: var(--w-cloud);
+  height: var(--h-cloud);
+  border-radius: 9999px;
+  filter: drop-shadow(8px 8px 0 var(--bg-cloud-shadow));
+  box-shadow: 0 0 10px var(--bg-cloud), 0 0 20px var(--bg-cloud),
+    0 0 30px var(--bg-cloud), inset 0 0 10px var(--bg-cloud);
+  animation: animateCloud 2s steps(1) infinite;
+}
+@keyframes animateCloud {
+  0% {
+    filter: drop-shadow(8px 8px 0 var(--bg-cloud-shadow))
+      drop-shadow(0 0 0 var(--bg-cloud-light)) brightness(1);
+  }
+  95% {
+    filter: drop-shadow(8px 8px 0 var(--bg-cloud-shadow))
+      drop-shadow(0 0 calc(var(--h-cloud) / 2) #fff5) brightness(10);
+  }
+}
+.container .cloud:before {
+  content: "";
+  position: absolute;
+  top: calc(0px - var(--h-cloud) / 2);
+  left: -calc(var(--w-cloud));
+  transform: translateX(calc(0px + var(--h-cloud) / 2));
+  width: var(--h-cloud);
+  height: var(--h-cloud);
+  border-radius: 50%;
+  background-color: var(--bg-cloud);
+  box-shadow: var(--h-cloud) -10px 0 30px var(--bg-cloud),
+    0 0 10px var(--bg-cloud), 0 0 20px var(--bg-cloud), 0 0 30px var(--bg-cloud),
+    inset 0 0 10px var(--bg-cloud),
+    var(--h-cloud) -10px 10px 30px var(--bg-cloud),
+    var(--h-cloud) -10px 20px 30px var(--bg-cloud),
+    var(--h-cloud) -10px 30px 30px var(--bg-cloud);
+}
+.container .cloud:after {
+  content: "";
+  position: absolute;
+  width: var(--w-cloud);
+  inset: 0;
+  background: var(--bg-cloud);
+  border-radius: 9999px;
+}
+.container .cloud .drop {
+  position: absolute;
+  top: calc(var(--h-cloud) / 2);
+  background: var(--bg-drop-color);
+  width: 2px;
+  height: 10px;
+  border-radius: 9999px;
+  transform-origin: bottom;
+  box-shadow: 0 0 2px var(--bg-drop-color), 0 0 4px var(--bg-drop-color),
+    0 0 6px var(--bg-drop-color);
+  animation: animateDropFall 2s linear infinite;
+}
+@keyframes animateDropFall {
+  0% {
+    transform: translateY(0) scaleY(1);
+  }
+  70% {
+    transform: translateY(calc(var(--h-container) / 1.5)) scaleY(1);
+  }
+  80% {
+    transform: translateY(calc(var(--h-container) / 1.5)) scaleY(0.2);
+  }
+  100% {
+    transform: translateY(calc(var(--h-container) / 1.5)) scaleY(0) scaleX(15);
+  }
+}

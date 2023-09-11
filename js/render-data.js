@@ -87,6 +87,11 @@ const projects = [
     description: "How To Create Solar Eclipse Animation Using Css and Html",
     ref: "./tutorials/Solar Eclipse Animation/index.html",
   },
+  {
+    name: "Amazing Rain and Lightning Animation Effects",
+    description: "Amazing Rain and Lightning Animation Effects",
+    ref: "./tutorials/Amazing Rain and Lightning Animation Effects/index.html",
+  },
 ]
 const projectsList = document.querySelector("#projects ul")
 for (let project of projects) {
