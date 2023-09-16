@@ -92,6 +92,11 @@ const projects = [
     description: "Amazing Rain and Lightning Animation Effects",
     ref: "./tutorials/Amazing Rain and Lightning Animation Effects/index.html",
   },
+  {
+    name: "Data Clouds Rain",
+    description: "Data Clouds Rain Animation Effects",
+    ref: "./tutorials/Data Clouds Rain/index.html",
+  },
 ]
 const projectsList = document.querySelector("#projects ul")
 for (let project of projects) {
